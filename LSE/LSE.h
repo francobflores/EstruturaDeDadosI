@@ -98,5 +98,23 @@ No* excluiInicio(No* L);
  *   - A função assume que a memória do último nó será liberada corretamente fora da função.
  */
 No* excluiFinal(No* L);
+/* 
+ * Realiza uma busca ordenada em uma lista encadeada.
+ * 
+ * Parâmetros:
+ *   - L: Um ponteiro para o início da lista encadeada.
+ *   - valor: O valor inteiro a ser buscado na lista.
+ *   - pred: Um ponteiro para um ponteiro de nó, que será atualizado para apontar para o nó anterior ao nó encontrado (ou o local de inserção).
+ * 
+ * Retorna:
+ *   - Um ponteiro para o nó contendo o valor buscado, se encontrado. Caso contrário, retorna NULL.
+ * 
+ * Observações:
+ *   - Essa função foi criada para ser usanda dentro das funções insereOrdenado e excluiOrdenado.
+ *   - É necessário definir a estrutura 'No' antes de utilizar esta função.
+ *   - O ponteiro 'pred' deve ser inicializado como NULL antes de chamar a função.
+ */
+No *buscaOrdenada(No* L, int valor, No** pred)
+
 
 #endif // __LSE_H__
