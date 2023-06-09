@@ -25,4 +25,9 @@ void iniciaPilha(Pilha *P);
 /* Parametros: tipo Pilha */
 int verificaVazia(Pilha *P);
 
+/* Função para empilhar novo item na Pilha */
+/* Parametros: tipo Pilha, inteiro  valor */
 
+void empilhar(Pilha *P, int valor);
+
+void imprime(Pilha *P);
